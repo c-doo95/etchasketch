@@ -17,4 +17,5 @@
 #cell {
   flex: auto;
   border: solid 1px black;
+  aspect-ratio: 1;
 }
