@@ -1,3 +1,15 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 25px;
+}
+
 .container {
   height: auto;
   width: 100%;
