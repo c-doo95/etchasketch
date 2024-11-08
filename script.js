@@ -1,4 +1,5 @@
 const container = document.querySelector('.container');
+const setBtn = document.querySelector('#reset');
 
 function getRandomColor() {
   let letters = '0123456789ABCDEF';
@@ -31,4 +32,19 @@ function createGrid(dimension) {
   };
 };
 
-createGrid(10);
+setBtn.addEventListener('click', () => {
+  let result = prompt('How many cells to a side?', '50');
+  if (result === null) {
+    return;
+  } else if (Number(result) > 0 && Number(result) <= 100) {
+    container.replaceChildren();
+    createGrid(Number(result));
+  } else if (Number(result) > 100) {
+    alert("Please input a number between 1 and 100");
+    return;
+  } else if (Number(result) != Number) {
+    alert("Please input a number between 1 and 100");
+    return;
+  }
+});
+
