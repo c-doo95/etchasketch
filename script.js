@@ -13,4 +13,4 @@ function createGrid(dimension) {
   };
 };
 
-createGrid(5);
+createGrid(10);

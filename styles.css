@@ -1,17 +1,21 @@
 .container {
+  height: 750px;
+  width: 750px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  flex: auto;
+  aspect-ratio: 1;
+  border: solid;
 }
 
 #row {
+  width: 100%;
   display: flex;
-  gap: 10px;
+  flex-direction: row;
 }
 
 #cell {
-  height: 50px;
-  width: 50px;
+  flex: auto;
+  border: solid 1px;
   background-color: rgb(76, 194, 174);
-  border: dashed rgb(140, 0, 255);
 }
